@@ -5,21 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Confirmação de Presença</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <body>
-        <form name="rsvp" method="POST" data-netlify="true" action="/thank-you.html">
-            <input type="hidden" name="form-name" value="rsvp"> <!-- Campo oculto necessário -->
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
-          <br>
-          <label for="quantidade">Quantidade de Pessoas:</label>
-          <input type="number" id="quantidade" name="quantidade" required>
-          <br>
-          <button type="submit">Enviar</button>
-        </form>
-      </body>
+  <div class="section">
+    <div class="text">
+      <h1>1 ano do <br> Issac</h1>
+      <p>Confirme a sua Presença abaixo 👇</p>
+    </div>
 
+    <div class="container">
+      <form name="rsvp" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="rsvp"> <!-- Campo oculto necessário -->
+        <label for="nome">Digite o seu nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="quantidade">Quantidade de Pessoas:</label>
+        <input type="number" id="quantidade" name="quantidade" required>
+        <br>
+        <button type="submit">Confirmar Presença</button>
+      </form>
+    </div>
+  </div>
 
+  <footer class="footer">
+    <p>Desenvolvido por &copy; <a href="https://www.instagram.com/dev.mao/">Gabriel Dias</a></p>
+  </footer>
 </body>
 </html>
